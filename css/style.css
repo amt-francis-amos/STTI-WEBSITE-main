@@ -1135,7 +1135,7 @@ tr:nth-child(even) {
   z-index: 10;
 }
 
-/* Dot Controls */
+
 .carousel-dots {
   display: flex;
   justify-content: center;
