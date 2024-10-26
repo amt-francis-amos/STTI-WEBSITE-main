@@ -673,28 +673,8 @@ tr:nth-child(even) {
   text-align: justify;
 }
 
-/* Reduce spacing on smaller screens */
-@media (max-width: 600px) {
-  .heads-depart h1 {
-    font-size: 1.5rem;
-  }
 
-  .depart-details {
-    padding: 1.5em;
-  }
 
-  .depart-info h2 {
-    font-size: 1rem;
-  }
-
-  .depart-info h3 {
-    font-size: 0.9rem;
-  }
-
-  .depart-info p {
-    font-size: 0.85rem;
-  }
-}
 
 
 /* -----END OF DEPARTMENT STYLING ---- */
@@ -1704,6 +1684,33 @@ form textarea{
 
 
 /* --------RESPONSIVENESS ---------------- */
+
+
+@media (max-width: 600px) {
+  .heads-depart h1 {
+    font-size: 1.5rem;
+  }
+
+  .depart-details {
+    padding: 1.5em;
+  }
+
+  .depart-info h2 {
+    font-size: 1rem;
+  }
+
+  .depart-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .depart-info p {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
 
 
 @media (max-width: 768px) {
