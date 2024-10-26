@@ -1106,6 +1106,20 @@ tr:nth-child(even) {
   background: linear-gradient(135deg, #ecfcfc, #ffffff);
 }
 
+
+
+.gallery-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url('../images/gallery-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .gallery h1 {
   font-size: 2em;
   margin-bottom: 20px;
