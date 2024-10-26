@@ -1573,7 +1573,7 @@ form textarea {
 
 @media (min-width: 768px) {
   .banner-content {
-    width: 70%;
+    width: 100%;
     margin-top: 5em;
     padding: 40px;
   }
@@ -1589,19 +1589,12 @@ form textarea {
 
 @media (min-width: 992px) {
 
-
-  .banner-content {
-    width: 80%;
-    margin: 17% auto;
-    text-align: center;
-  }
-
   .banner-content h1 {
-    font-size: 4rem;
+    font-size:3rem;
   }
 
   .banner-content p {
-    font-size: 2rem;
+    font-size:1.rem;
   }
 }
 
