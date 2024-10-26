@@ -1560,6 +1560,8 @@ form textarea {
 }
 
 @media (min-width: 992px) {
+
+
   .banner-content {
     width: 80%;
     margin: 17% auto;
@@ -1724,6 +1726,8 @@ form textarea {
   .footer-info .call {
     font-size: 16px;
   }
+
+  
 }
 
 @media (max-width: 992px) {
@@ -2033,6 +2037,7 @@ form textarea {
     text-shadow: 0px 0px 10px #000;
   }
 
+ 
   .depart-info img {
     width: 100%;
     height: 28vh;
@@ -2171,6 +2176,7 @@ form textarea {
 
 @media (max-width: 835px) {
   .depart-info img {
+    width:100%;
     height: 40vh;
     object-fit: cover;
   }
