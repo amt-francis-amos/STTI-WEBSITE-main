@@ -1054,7 +1054,7 @@ tr:nth-child(even) {
 }
 
 .gallery-info {
-  min-width: 100%;
+  min-width:50%;
   text-align: center;
   padding: 10px;
 }
