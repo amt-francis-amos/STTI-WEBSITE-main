@@ -1843,11 +1843,12 @@ form textarea{
   }
 
   .vision-container {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
   
 }
+
 
 
 
