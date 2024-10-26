@@ -1089,49 +1089,6 @@ tr:nth-child(even) {
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .courses {
-    padding: 80px 40px;
-  }
-
-  .section-title{
-    margin-bottom:20px;
-    text-align:center;
-  }
-
-
-  .course-img {
-    height: 400px;
-  }
-  .section-title h1 {
-    font-size: 2.5rem;
-  }
-  .course-grid {
-    gap: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .course-img {
-    height: 500px;
-  }
-  .section-title h1 {
-    font-size: 3rem;
-  }
-
-  
-  .section-title p {
-    font-size: 1rem;
-  }
-  .course-card h2 {
-    font-size: 1.2rem;
-  }
-  .course-card p {
-    font-size: 1rem;
-  }
-}
-
-
 
 /* ------- END OF COURSES STYLING ------- */
 
@@ -1720,6 +1677,48 @@ form textarea{
 /* --------RESPONSIVENESS ---------------- */
 
 
+
+@media (min-width: 768px) {
+
+ 
+
+  .banner-content {
+    width: 70%;
+    margin-top: 5em;
+    padding:40px;
+  }
+
+  .banner-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-content {
+    width:80%;
+    margin:17% auto;
+    text-align:center;
+   
+  }
+
+  .banner-content h1 {
+    font-size: 4rem;
+  }
+
+  .banner-content p {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+
+
 @media (max-width: 600px) {
   .heads-depart h1 {
     font-size: 1.5rem;
@@ -1743,6 +1742,47 @@ form textarea{
 }
 
 
+@media (min-width: 768px) {
+  .courses {
+    padding: 80px 40px;
+  }
+
+  .section-title{
+    margin-bottom:20px;
+    text-align:center;
+  }
+
+
+  .course-img {
+    height: 400px;
+  }
+  .section-title h1 {
+    font-size: 2.5rem;
+  }
+  .course-grid {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-img {
+    height: 500px;
+  }
+  .section-title h1 {
+    font-size: 3rem;
+  }
+
+  
+  .section-title p {
+    font-size: 1rem;
+  }
+  .course-card h2 {
+    font-size: 1.2rem;
+  }
+  .course-card p {
+    font-size: 1rem;
+  }
+}
 
 
 
@@ -1831,15 +1871,15 @@ form textarea{
 }
 
 
+
+
+
 @media (max-width: 992px) {
 
     .container{
        width:80%;
     }
  
-
- 
-
   .site-btn{
       display:none;
   }
