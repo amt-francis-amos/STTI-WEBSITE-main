@@ -12,6 +12,85 @@ body {
   overflow-x: hidden;
 }
 
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height:88px;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  position: relative;
+}
+
+.header-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.navbar .fa {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 7px 18px;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  border-radius: 6px;
+  display: block;
+  margin:auto;
+  background: #d0a141;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+nav ul li.active a {
+  color: #004c7e;
+  font-weight: bold;
+}
+
+.site-btn{
+  position: relative;
+}
+
+.site-btn a{
+     border:2px solid #004c7e;
+     padding:12px 30px;
+     border-radius:8px;
+}
+
+.site-btn a:hover{
+     background-color: #004c7e;
+     color: #fff;
+}
+
+
 #overlay {
   display: flex;
   justify-content: center;
@@ -194,67 +273,8 @@ body {
   display: block;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
 
-header {
-  width: 100%;
-  height: 78px;
-  background: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  position: relative;
-}
 
-.header-row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 1em;
-}
-
-.navbar .fa {
-  display: none;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 7px 18px;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  border-radius: 6px;
-  display: block;
-  margin: 5px auto;
-  background: #d0a141;
-  transition: all 0.3s;
-}
-
-nav ul li a:hover:after {
-  width: 100%;
-}
-
-nav ul li.active a {
-  color: #004c7e;
-  font-weight: bold;
-}
 
 /* ------ END OF HOMEPAGE STYLING -------- */
 
@@ -1595,10 +1615,16 @@ form textarea {
 
 /* --------RESPONSIVENESS ---------------- */
 
+
+
+
+
 @media (max-width: 768px) {
   .carousel-dots {
       display: flex;
   }
+
+  
 }
 
 @media (min-width: 768px) {
@@ -1677,6 +1703,8 @@ form textarea {
   .courses {
     padding: 80px 40px;
   }
+
+
 
   .section-title {
     margin-bottom: 20px;
@@ -1793,37 +1821,22 @@ form textarea {
     width: 80%;
   }
 
-  .site-btn {
-    display: none;
-  }
-
-  .hero-img {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
-
-  .about-header {
-    width: 100%;
-    height: 50vh;
-    object-fit: cover;
-  }
 
   .navbar {
     width: 100%;
     position: relative;
   }
-
+  
   nav ul {
     display: block;
   }
-
+  
   .header-row .fa-bars {
     position: absolute;
     right: -6%;
     top: 10px;
   }
-
+  
   .navbar .fa {
     display: block;
     color: #000;
@@ -1831,12 +1844,12 @@ form textarea {
     cursor: pointer;
     padding: 10px 10px;
   }
-
+  
   .navbar .fa-close {
     color: #fff;
     font-size: 25px;
   }
-
+  
   .nav-links {
     background: #004c7e;
     height: 100vh;
@@ -1850,29 +1863,71 @@ form textarea {
     color: #fff;
     overflow: hidden;
   }
-
+  
   nav ul li {
     padding-top: 10px;
     display: block;
     margin-top: 20px;
   }
-
+  
   nav ul li a {
     color: #fff;
   }
-
+  
   nav ul li a:after {
     color: #fff;
   }
-
+  
   nav ul li a:hover::after {
     width: 0;
     color: #007bff;
   }
-
+  
   nav ul li.active a {
     color: #d0a141;
     font-weight: bold;
+  }
+ 
+
+
+  .site-btn a{
+     width:110px;
+     height:40px;
+     padding:10px 20px;
+     position:absolute;
+     left:120px;
+     text-align:center;
+     font-size:12px;
+  }
+
+.apply-btn {
+  display:block; 
+  border:2px solid #004c7e;
+  color: #004c7e; 
+  padding: 10px;
+  text-align: center; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  margin: 20px 0; 
+  
+}
+
+.apply-btn:hover {
+  background-color: #007bff; 
+  color: #fff; 
+}
+
+  
+  .hero-img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .about-header {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
   }
 
   .login-btn {
