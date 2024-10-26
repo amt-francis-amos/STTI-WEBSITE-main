@@ -607,23 +607,8 @@ tr:nth-child(even) {
   padding: 0 4%;
 }
 
-/* For larger screens, adjust to a two-column layout */
-@media (min-width: 768px) {
-  .department-container {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    padding: 0 6%;
-  }
-}
 
-/* For even larger screens, adjust to three columns */
-@media (min-width: 1024px) {
-  .department-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    padding: 0 8%;
-  }
-}
+
 
 .depart-details {
   width: 100%;
@@ -1467,6 +1452,8 @@ form textarea{
   background:#004c7e;
   margin-top:1em;
   text-transform:uppercase;
+  display:inline-block;
+  margin-top:2em;
 }
 
 /* ------------END OF CONTACT STYLING */
@@ -1716,7 +1703,22 @@ form textarea{
 
 
 
+@media (min-width: 768px) {
+  .department-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0 6%;
+  }
+}
 
+
+@media (min-width: 1024px) {
+  .department-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 0 8%;
+  }
+}
 
 
 @media (max-width: 600px) {
@@ -2417,6 +2419,7 @@ form textarea{
 
   .btn-3{
     font-size:0.8rem;
+    margin-top:1rem;
   }
 
 
