@@ -1026,7 +1026,7 @@ tr:nth-child(even) {
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-image: url('../images/Course-banner.jpg');
+  background-image: url('../images/course-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
