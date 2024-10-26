@@ -2171,7 +2171,7 @@ form textarea {
 
 @media (max-width: 835px) {
   .depart-info img {
-    height: 50vh;
+    height: 40vh;
     object-fit: cover;
   }
 
