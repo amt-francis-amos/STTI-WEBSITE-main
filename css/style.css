@@ -629,9 +629,9 @@ tr:nth-child(even) {
 .admin-mem-container {
   margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   place-items: center;
-  gap: 2rem;
+  gap:1rem;
   padding: 0 8%;
 }
 
@@ -656,7 +656,7 @@ tr:nth-child(even) {
 
 .admin-mem-info img {
   width: 100%;
-  height: 50vh;
+  height:49vh;
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -667,8 +667,9 @@ tr:nth-child(even) {
 }
 
 .admin-mem-info .grace {
-  width: 90%;
-  height: 60vh;
+  width: 100%;
+  height:46vh;
+  object-fit:cover;
 }
 
 .card {
