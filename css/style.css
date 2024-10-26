@@ -1891,13 +1891,13 @@ form textarea {
 
 
   .site-btn a{
-     width:110px;
+     width:100px;
      height:40px;
      padding:10px 20px;
      position:absolute;
-     left:130px;
+     left:140px;
      text-align:center;
-     font-size:12px;
+     font-size:11px;
   }
 
 .apply-btn {
