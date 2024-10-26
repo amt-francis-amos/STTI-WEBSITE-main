@@ -1068,6 +1068,9 @@ tr:nth-child(even) {
   padding: 0 20px;
 }
 
+
+
+
 .carousel {
   transition: transform 0.5s ease-in-out;
 }
@@ -1110,6 +1113,27 @@ tr:nth-child(even) {
   padding: 10px;
   border-radius: 50%;
   z-index: 10;
+}
+
+/* Dot Controls */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-dot.active {
+  background-color: #004c7e;
 }
 
 /* ------ END OF GALLERY STYLING ---- */
