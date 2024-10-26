@@ -1017,35 +1017,30 @@ tr:nth-child(even) {
 /* --- OUR COURSES STYLING --- */
 
 .courses {
-  padding: 80px 0;
+  padding: 60px 20px; 
   background-color: #f4f7fa;
 }
 
 .course-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  background-image: url('../images/course-banner.jpg');
-  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  object-fit: contain;
+  background-image: url("../images/Course-banner.jpg");
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
   position: relative;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .section-title h1 {
-  font-size: 36px;
+  font-size: 2rem; 
   font-weight: bold;
   color: #004c7e;
 }
 
 .section-title p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   max-width: 600px;
   margin: 10px auto;
   color: #333;
@@ -1053,15 +1048,15 @@ tr:nth-child(even) {
 
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
 }
 
 .course-card {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -1074,29 +1069,63 @@ tr:nth-child(even) {
 .course-card img {
   border-radius: 10px;
   width: 100%;
-  height: 200px;
+  height: auto;
+  max-height: 200px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.course-card img:hover {
-  transform: scale(1.05);
-}
-
 .course-card h2 {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   color: #004c7e;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 .course-card p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #555;
-  line-height: 1.6;
-  max-width: 90%;
+  line-height: 1.4;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .courses {
+    padding: 80px 40px;
+  }
+
+
+
+
+  .course-img {
+    height: 400px;
+  }
+  .section-title h1 {
+    font-size: 2.5rem;
+  }
+  .course-grid {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-img {
+    height: 500px;
+  }
+  .section-title h1 {
+    font-size: 3rem;
+  }
+  .section-title p {
+    font-size: 1rem;
+  }
+  .course-card h2 {
+    font-size: 1.2rem;
+  }
+  .course-card p {
+    font-size: 1rem;
+  }
+}
+
 
 
 /* ------- END OF COURSES STYLING ------- */
@@ -2200,15 +2229,15 @@ form textarea{
   .course-img {
     width: 100%;
     height: 22vh;
-    position: absolute;
-    top:12%;
     object-fit: cover;
   }
 
-  .courses h1 {
-    margin-top:5em;
-  }
 
+  .section-title{
+    margin-bottom:20px;
+    text-align:center;
+  }
+  
   .course-flex{
     width:100%;
   }
