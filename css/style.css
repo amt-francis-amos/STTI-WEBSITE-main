@@ -1154,7 +1154,7 @@ tr:nth-child(even) {
 }
 
 .gallery-info img {
-  width:50%;
+  width:70%;
   height: 50vh;
   max-height: 300px;
   object-fit: cover;
