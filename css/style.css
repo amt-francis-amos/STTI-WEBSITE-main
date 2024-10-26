@@ -1772,8 +1772,9 @@ form textarea {
   }
 
   .gallery-info img {
-    height: 35vh;
-    max-height: 150px;
+    width:100%;
+    height:15vh;
+    max-height:600px;
   }
 
   .event-type {
@@ -1781,7 +1782,7 @@ form textarea {
   }
 
   .carousel-control {
-    padding: 8px;
+    padding:5px;
   }
 }
 
