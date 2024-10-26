@@ -4,7 +4,7 @@ let startPosition = 0;
 let currentTranslate = 0;
 let previousTranslate = 0;
 
-// Function to move slides
+
 function moveSlide(index) {
     const slides = document.querySelectorAll('.gallery-info');
     const totalSlides = slides.length;
@@ -24,7 +24,6 @@ function moveSlide(index) {
     updateDots();
 }
 
-// Initialize dots
 function initializeDots() {
     const slides = document.querySelectorAll('.gallery-info');
     const dotsContainer = document.querySelector('.carousel-dots');
@@ -89,7 +88,7 @@ function getPositionX(event) {
     return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
 }
 
-// Keyboard Navigation
+
 carousel.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
         moveSlide(currentIndex + 1);
