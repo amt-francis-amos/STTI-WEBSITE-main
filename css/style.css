@@ -571,7 +571,7 @@ tr:nth-child(even) {
 .depart-info img {
   transition: 0.3s;
   width:100%;
-  height:66vh;
+  height:auto;
   object-fit:cover;
   border-radius: 15px;
 }
