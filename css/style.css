@@ -1155,6 +1155,7 @@ tr:nth-child(even) {
 }
 
 
+
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1165,8 +1166,6 @@ tr:nth-child(even) {
   padding: 0 20px;
 }
 
-
-
 .carousel {
   transition: transform 0.5s ease-in-out;
 }
@@ -1176,8 +1175,6 @@ tr:nth-child(even) {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px; 
-  border:1px solid red;
-  margin:auto;
 }
 
 
@@ -1188,7 +1185,7 @@ tr:nth-child(even) {
 }
 
 .gallery-info img {
-  width:70%;
+  width: 100%;
   height: 50vh;
   max-height: 300px;
   object-fit: cover;
