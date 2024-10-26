@@ -1595,6 +1595,12 @@ form textarea {
 
 /* --------RESPONSIVENESS ---------------- */
 
+@media (max-width: 768px) {
+  .carousel-dots {
+      display: flex;
+  }
+}
+
 @media (min-width: 768px) {
   .banner-content {
     width: 100%;

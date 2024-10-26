@@ -1,29 +1,30 @@
 let currentIndex = 0;
+let isDragging = false;
+let startPosition = 0;
+let currentTranslate = 0;
+let previousTranslate = 0;
 
 // Function to move slides
 function moveSlide(index) {
     const slides = document.querySelectorAll('.gallery-info');
     const totalSlides = slides.length;
 
-    // Restrict movement beyond the last slide
     if (index >= totalSlides - 1) {
-        currentIndex = totalSlides - 1; // Stop at last slide
+        currentIndex = totalSlides - 1;
     } else if (index <= 0) {
-        currentIndex = 0; // Stop at first slide
+        currentIndex = 0;
     } else {
-        currentIndex = index; // Move within bounds
+        currentIndex = index;
     }
 
-    // Calculate offset for transformation
     const offset = -currentIndex * 100;
     const carousel = document.querySelector('.carousel');
     carousel.style.transform = `translateX(${offset}%)`;
 
-    // Update the dots to reflect the active slide
     updateDots();
 }
 
-// Initialize dots based on the number of slides
+// Initialize dots
 function initializeDots() {
     const slides = document.querySelectorAll('.gallery-info');
     const dotsContainer = document.querySelector('.carousel-dots');
@@ -36,11 +37,10 @@ function initializeDots() {
         dotsContainer.appendChild(dot);
     });
 
-    // Set the initial active dot
     updateDots();
 }
 
-// Update the dot status to show the active slide
+// Update active dot
 function updateDots() {
     const dots = document.querySelectorAll('.carousel-dot');
     dots.forEach((dot, index) => {
@@ -48,5 +48,54 @@ function updateDots() {
     });
 }
 
-// Initialize dots on load
+// Drag and Touch Support
+const carousel = document.querySelector('.carousel');
+carousel.addEventListener('touchstart', touchStart);
+carousel.addEventListener('touchend', touchEnd);
+carousel.addEventListener('touchmove', touchMove);
+carousel.addEventListener('mousedown', touchStart);
+carousel.addEventListener('mouseup', touchEnd);
+carousel.addEventListener('mousemove', touchMove);
+
+function touchStart(event) {
+    isDragging = true;
+    startPosition = getPositionX(event);
+    carousel.style.cursor = 'grabbing';
+}
+
+function touchEnd() {
+    isDragging = false;
+    const movedBy = currentTranslate - previousTranslate;
+
+    if (movedBy < -50 && currentIndex < document.querySelectorAll('.gallery-info').length - 1) {
+        currentIndex++;
+    } else if (movedBy > 50 && currentIndex > 0) {
+        currentIndex--;
+    }
+
+    moveSlide(currentIndex);
+    carousel.style.cursor = 'grab';
+}
+
+function touchMove(event) {
+    if (isDragging) {
+        const currentPosition = getPositionX(event);
+        currentTranslate = previousTranslate + currentPosition - startPosition;
+        carousel.style.transform = `translateX(${currentTranslate}px)`;
+    }
+}
+
+function getPositionX(event) {
+    return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
+}
+
+// Keyboard Navigation
+carousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+        moveSlide(currentIndex + 1);
+    } else if (event.key === 'ArrowLeft') {
+        moveSlide(currentIndex - 1);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', initializeDots);
