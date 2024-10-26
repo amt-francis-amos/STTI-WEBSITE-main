@@ -1000,15 +1000,6 @@ tr:nth-child(even) {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* --- OUR COURSES STYLING --- */
 
 .courses {
@@ -1151,6 +1142,8 @@ tr:nth-child(even) {
   display: flex;
   flex-wrap: nowrap;
   gap: 20px; 
+  border:1px solid red;
+  margin:auto;
 }
 
 
@@ -1161,7 +1154,7 @@ tr:nth-child(even) {
 }
 
 .gallery-info img {
-  width: 100%;
+  width:50%;
   height: 50vh;
   max-height: 300px;
   object-fit: cover;
@@ -1334,15 +1327,6 @@ tr:nth-child(even) {
 }
 
 
-@media (max-width: 768px) {
-  .news h1 {
-      font-size: 24px;
-  }
-
-  .news h2 {
-      font-size: 20px; 
-  }
-}
 
 /* ---------------------END OF NEWS STYLING------- */
 
@@ -1689,6 +1673,17 @@ form textarea{
 
 
 /* --------RESPONSIVENESS ---------------- */
+
+
+@media (max-width: 768px) {
+  .news h1 {
+      font-size: 24px;
+  }
+
+  .news h2 {
+      font-size: 20px; 
+  }
+}
 
 @media (max-width: 768px) {
   .gallery h1 {
