@@ -481,10 +481,16 @@ tr:nth-child(even) {
 .about-logo {
   text-align: center;
   margin-top: 3em;
+  max-width: 1200px; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 .about-logo h1 {
+  font-size: 2rem;
+  color: #006994;
   margin-bottom: 1em;
+  text-transform: uppercase;
 }
 
 .about-logo h1::after {
@@ -496,17 +502,38 @@ tr:nth-child(even) {
   margin: 5px auto;
 }
 
-.about-logo p {
-  line-height: 1.7;
-  text-align: justify;
-  margin-top: 20px;
+.logo-text-wrapper {
+  background: #f0f8ff; 
+  padding: 2em;
+  border-radius: 25px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin-top: 20px; 
+  text-align: justify; 
+  position: relative; 
 }
-.about-logo .text-logo {
-  width: 200px;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
+
+.logo-text-wrapper img.text-logo {
+  width: 150px;
+  float: left; 
+  margin-right: 15px; 
+  margin-bottom: 10px; 
+  border-radius: 10%; 
 }
+
+.logo-text-wrapper p {
+  margin-top: 1.5em; 
+}
+
+.about-logo strong {
+  color: #004c7e; 
+}
+
+.logo-text-wrapper ul {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  text-align: left;
+}
+
 
 .info-cont {
   display: grid;
@@ -1614,6 +1641,13 @@ form textarea {
   .depart-info p {
     font-size: 0.85rem;
   }
+  .logo-text-wrapper {
+    padding: 1em;
+}
+
+.logo-text-wrapper img.text-logo {
+    width: 100px; 
+}
 }
 
 @media (min-width: 768px) {
