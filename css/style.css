@@ -1840,9 +1840,9 @@ form textarea {
   .navbar .fa {
     display: block;
     color: #000;
-    font-size: 2rem;
+    font-size:1.7rem;
     cursor: pointer;
-    padding: 10px 10px;
+    padding: 15px 10px;
   }
   
   .navbar .fa-close {
@@ -1895,7 +1895,7 @@ form textarea {
      height:40px;
      padding:10px 20px;
      position:absolute;
-     left:120px;
+     left:130px;
      text-align:center;
      font-size:12px;
   }
