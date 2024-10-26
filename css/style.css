@@ -2347,4 +2347,10 @@ form textarea{
   .btn-3{
     font-size:0.8rem;
   }
+
+  
+.scroll-to-top-btn{
+    bottom:40px;
+    right:30px;
+}
 }
