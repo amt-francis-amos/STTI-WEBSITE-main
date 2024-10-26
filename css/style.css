@@ -1094,7 +1094,10 @@ tr:nth-child(even) {
     padding: 80px 40px;
   }
 
-
+  .section-title{
+    margin-bottom:20px;
+    text-align:center;
+  }
 
 
   .course-img {
@@ -1115,6 +1118,8 @@ tr:nth-child(even) {
   .section-title h1 {
     font-size: 3rem;
   }
+
+  
   .section-title p {
     font-size: 1rem;
   }
@@ -2376,6 +2381,8 @@ form textarea{
   .btn-3{
     font-size:0.8rem;
   }
+
+
 
   
 .scroll-to-top-btn{
