@@ -4,11 +4,11 @@ let startPosition = 0;
 let currentTranslate = 0;
 let previousTranslate = 0;
 
-
 function moveSlide(index) {
     const slides = document.querySelectorAll('.gallery-info');
     const totalSlides = slides.length;
 
+    // Update currentIndex within bounds
     if (index >= totalSlides - 1) {
         currentIndex = totalSlides - 1;
     } else if (index <= 0) {
@@ -17,6 +17,7 @@ function moveSlide(index) {
         currentIndex = index;
     }
 
+    // Calculate the offset for translation
     const offset = -currentIndex * 100;
     const carousel = document.querySelector('.carousel');
     carousel.style.transform = `translateX(${offset}%)`;
@@ -29,6 +30,7 @@ function initializeDots() {
     const dotsContainer = document.querySelector('.carousel-dots');
     dotsContainer.innerHTML = '';
 
+    // Create dots for each slide
     slides.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('carousel-dot');
@@ -55,6 +57,15 @@ carousel.addEventListener('touchmove', touchMove);
 carousel.addEventListener('mousedown', touchStart);
 carousel.addEventListener('mouseup', touchEnd);
 carousel.addEventListener('mousemove', touchMove);
+
+// Enable keyboard navigation
+carousel.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+        moveSlide(currentIndex + 1);
+    } else if (event.key === 'ArrowLeft') {
+        moveSlide(currentIndex - 1);
+    }
+});
 
 function touchStart(event) {
     isDragging = true;
@@ -87,14 +98,5 @@ function touchMove(event) {
 function getPositionX(event) {
     return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX;
 }
-
-
-carousel.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowRight') {
-        moveSlide(currentIndex + 1);
-    } else if (event.key === 'ArrowLeft') {
-        moveSlide(currentIndex - 1);
-    }
-});
 
 document.addEventListener('DOMContentLoaded', initializeDots);

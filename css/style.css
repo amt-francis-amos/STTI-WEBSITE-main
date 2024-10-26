@@ -1153,6 +1153,15 @@ tr:nth-child(even) {
   background-color: #004c7e;
 }
 
+.carousel:focus {
+  outline: none; 
+}
+
+.carousel img:focus {
+  outline: none; 
+}
+
+
 /* ------ END OF GALLERY STYLING ---- */
 
 /* ---------------NEWS STYLING-------- */
